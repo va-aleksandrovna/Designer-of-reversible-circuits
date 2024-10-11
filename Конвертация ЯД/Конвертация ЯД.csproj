@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Конвертация_ЯД</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="PREPRO\groupie.exe" />
+    <None Remove="PREPRO\GROUPIE.INP" />
+    <None Remove="PREPRO\linear.exe" />
+    <None Remove="PREPRO\LINEAR.INP" />
+    <None Remove="PREPRO\n_7925_79-Au-197.dat" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="PREPRO\groupie.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PREPRO\GROUPIE.INP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PREPRO\linear.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PREPRO\LINEAR.INP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PREPRO\n_7925_79-Au-197.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
